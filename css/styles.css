@@ -106,47 +106,65 @@ font-weight: 500;
 
 
 /* CARDS */
-.contenedor-cards {
-display: flex;
-justify-content: space-betweengit;
-}  
-
-
-.servicios-cards .contenedor-cards 
-
-
-
-.servicios-cards .contenedor-cards div {
-width: 40rem;
-height: 45rem;
-border: solid 1px black;
-align-items: center;
-text-align: center;
-
+img {
+  max-width: 100%;
 
 }
-.servicios-cards h2 {
-font-size: 5rem;
-margin-top: 2rem;
-justify-content: center;
-text-align: center;
-}
-.servicios-cards .contenedor-cards div h3  {
-margin-bottom: 2rem;
-font-size: 2rem;
-
-}
-.servicios-cards .contenedor-cards div{
-padding: 4rem
-}
-.servicios-cards .contenedor-cards div a {
-text-decoration: none;
-color: rgba(239, 241, 243, 0.667);
-background-color: #131313;
-font-size:4rem;
+article.card {
+  max-width: 35rem;
+  background-color: #b3b2b2;
+  border-radius: 0.8rem;
+  margin: 1rem;
+  box-shadow: 0 0 1.2rem rgba(239, 241, 243, 0.667);
 }
 
+.header-card {
+  border-radius: .8rem .8rem 0 0;
+  max-height: 2rem;
+  height: 2rem;
+  width: 100%;
+}
 
+.categoria-card {
+  margin-top: 1rem;
+}
+
+.categoria-card span {
+  background-color: rgba(61, 91, 121, 0.667);
+  color: white;
+  border-radius: .4rem;
+  padding: .2rem .5rem;
+}
+.card footer{
+  padding: 0 1rem;
+}
+.perfil-card {
+  display: flex;
+  align-items: center;
+
+}
+.img-perfil-card {
+  display: flex;
+}
+.img-perfil-card img {
+  width: 5rem;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+}
+
+.text-perfil-card {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.text-perfil-card span:nth-child(2){
+  color: #b3b2b2;
+}
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+}
 
 
 /* APLICANDO MEDIA QUERY */
@@ -164,9 +182,12 @@ nav .nav-list .nav-item {
 @media  screen and (max-width: 1114px) {
   nav .nav-list .nav-link {
     color: #131313;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 200;
-  
+    padding: auto;
+}
+   nav .navbar-brand {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 992px){
@@ -176,6 +197,11 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 10rem 10rem;
+}
+nav .nav-list .nav-link {
+  color: #131313;
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 input {
   display: none;
