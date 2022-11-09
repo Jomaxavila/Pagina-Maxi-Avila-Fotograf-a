@@ -161,6 +161,13 @@ nav .nav-list .nav-item {
 }
 
 }
+@media  screen and (max-width: 1114px) {
+  nav .nav-list .nav-link {
+    color: #131313;
+    font-size: 1.3rem;
+    font-weight: 200;
+  
+}
 
 @media screen and (max-width: 992px){
 nav { 
@@ -247,6 +254,10 @@ display: none;
 input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 transform: rotate(-45deg);
 }
+
+/* FOOTER */
+
+
 
 
 
