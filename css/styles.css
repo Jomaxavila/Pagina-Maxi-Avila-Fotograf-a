@@ -10,9 +10,10 @@
 
 a {
 text-decoration: none;
-padding: .5rem 1rem;
+padding: 1rem;
 color: black;
 }
+
 ul {
 list-style: none;
 
@@ -58,7 +59,8 @@ grid-area: footer;
 }
 
 /* MAIN */
-.titulo-index {
+
+.titulo-index h1{
   font-size: 4rem;
   text-shadow: .3rem .3rem 0 rgba(225, 236, 246, 0.667);
   margin: 7rem 0 7rem;
@@ -71,10 +73,11 @@ grid-area: footer;
 input {
 display: none;
 }
+
 nav {
 display: flex;
 justify-content: space-between;
-padding: 0 ;
+padding: 0;
 height: 10rem;
 background: #c5c2c2;
 line-height: 10rem;
@@ -85,7 +88,7 @@ nav .navbar-brand {
 color: #ffffff;
 font-size: 2rem;
 letter-spacing: .3rem;
-padding-left: 3rem;
+
 
 }
 
@@ -96,8 +99,7 @@ display: flex;
 
 nav .nav-list .nav-item {
 cursor: pointer;
-height: 100%;
-padding: 0 3rem;
+padding: 0 2rem;
 transition: .4s;
 }
 
@@ -118,6 +120,12 @@ font-weight: 500;
 
 /* CARDS */
 
+.titulo-cards h2 {
+  font-size: 5rem;
+  text-shadow: .3rem .3rem 0 rgba(225, 236, 246, 0.667);
+  margin: 9rem 0 7rem;
+  text-align: center;
+}
 
 .header-card img {
   max-width: 100%;
@@ -194,8 +202,8 @@ article.card {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  height: 100%
-
+  padding: 2rem;
+  margin: 15rem 0 15rem;
 
 }
 /* FOOTER */
@@ -205,8 +213,9 @@ article.card {
   justify-content: space-between;
   height: 10rem;
   background: #c5c2c2;
-  padding: 0rem 1.5rem;
   align-items: center;
+  text-align: center;
+  padding: 0 1rem;
   
   }
 
@@ -216,7 +225,8 @@ article.card {
   font-size: 1.5rem;
   letter-spacing: .3rem;
   justify-content: center;
-  
+  align-items: center;
+ 
 
   }
   
@@ -240,16 +250,17 @@ article.card {
 
   }
   
-  footer .footer-links a {
+.footer-links a {
   cursor: pointer;
-  padding: 0 3rem;
   transition: .4s;
   color: #131313;
   font-size: 3rem;
+  padding-right: 3rem;
+  
   
   }
   
-  footer .footer-links a:hover {
+ .footer-links a:hover {
   transform: scale(1.2);
 
   }
@@ -267,6 +278,7 @@ nav .nav-list .nav-item {
 }
 
 }
+
 @media  screen and (max-width: 1114px) {
   nav .nav-list .nav-link {
     color: #131313;
@@ -274,11 +286,14 @@ nav .nav-list .nav-item {
     font-weight: 200;
     padding: auto;
 }
-   nav .navbar-brand {
+  nav .navbar-brand {
   font-size: 1.5rem;
 }
 .titulo-index {
   font-size:3rem;}
+
+}
+
 
 @media screen and (max-width: 992px){
 nav { 
@@ -293,16 +308,48 @@ nav .nav-list .nav-link {
   font-size: 1.3rem;
   font-weight: 200;
 }
-.titulo-index {
+.titulo-index h1 {
   font-size: 2.5rem;}
-
-
 
 input {
   display: none;
 }
+.titulo-cards h2 {
+  font-size: 2rem;
+}
+
+.footer-container .footer {
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: .3rem;
+  justify-content: center;
+  
+}
+.footer-container .footer-terminos p {
+  font-size: .7rem;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.footer-container .footer-terminos b {
+  font-size: .7rem;
+  text-transform: uppercase;
+  justify-content: center;
 
 }
+.footer-links a {
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: .4s;
+  color: #131313;
+  font-size: 2rem;
+  
+  }
+  
+
+
+}
+
 
 @media screen and (max-width: 769px) {
 
@@ -311,7 +358,7 @@ nav .nav-list {
     position: absolute;
     background: #b3b2b2;
     width: 100%;
-    height: auto;
+    height: 80%;
     top: 20rem;
     right: 0%;
     transform: translateY(-200%);
@@ -343,14 +390,16 @@ cursor: pointer;}
 
 nav .navbar-toggler .bar {
 justify-content: space-between;
-width: 4rem;
-height: 5px;
+width: 5rem;
+height: .5rem;
 margin-bottom: 1rem;
 background: #ffffff;
 border-radius: 10%;
 transition: .4s;
 }
 
+.titulo-index h1 {
+  font-size: 1.3rem;}
 
 input {
 display: none;
@@ -376,11 +425,57 @@ display: none;
 input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 transform: rotate(-45deg);
 }
+.titulo-cards h2 {
+  font-size: 1.5rem;
+
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 10rem 0 10rem;
+}
+
+/* Media query Footer */
+.footer-container .footer {
+  color: #ffffff;
+  font-size: .7rem;
+  letter-spacing: .3rem;
+  justify-content: center;
+  
+}
+.footer-container .footer-terminos p {
+  font-size: .4rem;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.footer-container .footer-terminos b {
+  font-size: .4rem;
+  text-transform: uppercase;
+  justify-content: center;
+
+}
+.footer-links a {
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: .4s;
+  color: #131313;
+  font-size: 1rem;
+  
+  }
+  
+
+}
+
 
 /* BLOG  */
 
 #galeria .col-lg-4 {
-padding: 0 ;
+padding:1rem;
 
 }
 
