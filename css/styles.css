@@ -23,6 +23,9 @@ max-width: 100%;
 }
 
 /* BODY INDEX */
+body {
+  min-height: 100vh;
+}
 #body-index {
 display: grid;
 grid-template-areas: 
@@ -52,6 +55,14 @@ grid-area: card;
 }
 #footer-padre {
 grid-area: footer;
+}
+
+/* MAIN */
+.titulo-index {
+  font-size: 4rem;
+  text-shadow: .3rem .3rem 0 rgba(225, 236, 246, 0.667);
+  margin: 7rem 0 7rem;
+  text-align: center;
 }
 
 
@@ -106,6 +117,8 @@ font-weight: 500;
 
 
 /* CARDS */
+
+
 .header-card img {
   max-width: 100%;
   border-radius: .8rem;
@@ -144,7 +157,7 @@ article.card {
 
 }
 
-.card footer{
+.card{
   padding: 0rem 1rem;
   margin: 1rem 1rem;
   font-size: 3rem;
@@ -181,10 +194,65 @@ article.card {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  margin-top: 15rem;
-  height: 50rem;
+  height: 100%
+
 
 }
+/* FOOTER */
+
+  .footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  background: #c5c2c2;
+  padding: 0rem 1.5rem;
+  align-items: center;
+  
+  }
+
+
+  .footer-container .footer {
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: .3rem;
+  justify-content: center;
+  
+
+  }
+  
+  .footer-container .footer-terminos p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    justify-content: center;
+    
+  }
+  .footer-container .footer-terminos b {
+    font-size: 1rem;
+    text-transform: uppercase;
+    justify-content: center;
+
+
+  }
+  .footer-links ul{
+  display: flex;
+  justify-content: center;
+  
+
+  }
+  
+  footer .footer-links a {
+  cursor: pointer;
+  padding: 0 3rem;
+  transition: .4s;
+  color: #131313;
+  font-size: 3rem;
+  
+  }
+  
+  footer .footer-links a:hover {
+  transform: scale(1.2);
+
+  }
 
 
 /* APLICANDO MEDIA QUERY */
@@ -209,6 +277,8 @@ nav .nav-list .nav-item {
    nav .navbar-brand {
   font-size: 1.5rem;
 }
+.titulo-index {
+  font-size:3rem;}
 
 @media screen and (max-width: 992px){
 nav { 
@@ -223,6 +293,11 @@ nav .nav-list .nav-link {
   font-size: 1.3rem;
   font-weight: 200;
 }
+.titulo-index {
+  font-size: 2.5rem;}
+
+
+
 input {
   display: none;
 }
@@ -243,7 +318,8 @@ nav .nav-list {
     z-index: 10;
     transition: .6s;
 }
-
+.titulo-index {
+  font-size: 1.5rem;}
 
 
 nav .navbar-toggler {
@@ -300,12 +376,6 @@ display: none;
 input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 transform: rotate(-45deg);
 }
-
-/* FOOTER */
-
-
-
-
 
 /* BLOG  */
 
