@@ -191,19 +191,33 @@ footer {
 
 
 .titulo-cards h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
 
 }
+.categoria-card a {
+  background-color: #00a6fb;
+  color: white;
+  border-radius: .2rem;
+  padding: .6rem 2.3rem;
+  margin-top: 11rem;
+}
+
 
 .card-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  margin: 10rem 0 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  
 }
+
+
 }
+
+
+
 /* BLOG  */
 .titulo-blog {
   font-size: 2.2rem;
