@@ -4,8 +4,10 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
+  
 }
+
 
 
 a {
@@ -27,93 +29,17 @@ max-width: 100%;
 body {
   min-height: 100vh;
 }
-#body-index {
-display: grid;
-grid-template-areas: 
-"header header header"
-"main main main"
-"slider slider slider"
-"card card card"
-"footer footer footer";
-grid-template-columns: repeat(3,1fr);
-}
-
-#header-principal {
-grid-area: header;
-
-}
-#main-index {
-grid-area: main;
-}
 
 
-#slider-index {
-grid-area:slider ;
-}
 
-#cards-index {
-grid-area: card;
-}
-#footer-padre {
-grid-area: footer;
-}
 
 /* MAIN */
 
 .titulo-index h1{
-  font-size: 4rem;
+  font-size: 2rem;
   text-shadow: .3rem .3rem 0 rgba(225, 236, 246, 0.667);
   margin: 7rem 0 7rem;
   text-align: center;
-}
-
-
-/* HEADER */
-
-input {
-display: none;
-}
-
-nav {
-display: flex;
-justify-content: space-between;
-padding: 0;
-height: 10rem;
-background: #c5c2c2;
-line-height: 10rem;
-
-}
-
-nav .navbar-brand {
-color: #ffffff;
-font-size: 2rem;
-letter-spacing: .3rem;
-
-
-}
-
-nav .nav-list {
-display: flex;
-
-}
-
-nav .nav-list .nav-item {
-cursor: pointer;
-padding: 0 2rem;
-transition: .4s;
-}
-
-nav .nav-list .nav-item:hover {
-text-decoration:underline;
-transform: scale(1.2);
-
-
-}
-
-nav .nav-list .nav-link {
-color: #131313;
-font-size: 1.8rem;
-font-weight: 500;
 }
 
 
@@ -121,7 +47,7 @@ font-weight: 500;
 /* CARDS */
 
 .titulo-cards h2 {
-  font-size: 5rem;
+  font-size: 2rem;
   text-shadow: .3rem .3rem 0 rgba(225, 236, 246, 0.667);
   margin: 9rem 0 7rem;
   text-align: center;
@@ -130,6 +56,7 @@ font-weight: 500;
 .header-card img {
   max-width: 100%;
   border-radius: .8rem;
+  margin-top: .9rem;
 
   
 }
