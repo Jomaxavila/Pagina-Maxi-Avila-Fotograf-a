@@ -76,7 +76,7 @@ body {
 .navbar .navbar-nav .nav-item:hover::after {
   width: 100%;
   transition: all ease 3ms;
-  
+
 }
 
 
@@ -294,24 +294,31 @@ footer {
 /* BLOG  */
 
 .banner-imagen {
-    background-image: url('../img/grid/grid4.JPG');
-    background-size: cover;
-    margin-top:2rem;
-  
+  background-image: url('../img/grid/grid4.JPG');
+  background-size: cover;
+  margin-top: 2rem;
+
 }
 
 .titulo-blog h1 {
-color: #dedada;
+  color: #dedada;
 
 
 }
 
-
-.parrafo-blog {
-  font-size: 2rem;
+.text-center h2 {
+  font-size: 2.5rem;
   text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
-  margin: 4rem 0 4rem;
-  text-align: center;
+  margin: 8rem 0 8rem;
+
+}
+
+.p-4 {
+  margin: 7rem 0 7rem;
 }
 
 
+
+
+
+  
