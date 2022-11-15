@@ -263,7 +263,6 @@ footer {
 
   .titulo-blog {
     font-size: 1.2rem;
-    text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
     margin: 2rem 0 2rem;
     text-align: center;
   }
@@ -303,13 +302,15 @@ footer {
 .titulo-blog h1 {
 color: #dedada;
 
+
 }
 
 
 .parrafo-blog {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
   margin: 4rem 0 4rem;
   text-align: center;
 }
+
 
