@@ -293,7 +293,7 @@ footer {
 /* BLOG  */
 
 .banner-imagen {
-    background-image: url('/img/grid/grid4.JPG');
+    background-image: url('../img/grid/grid4.JPG');
     background-size: cover;
     margin-top:2rem;
   
