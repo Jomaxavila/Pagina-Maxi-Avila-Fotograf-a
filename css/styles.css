@@ -288,11 +288,6 @@ article.card {
   margin-top: 8rem;
 }
 
-/* PORTAFOLIO  */
-.bodas-portolio h2 {
-  font-size: 10 rem;
-}
-
 
 /* BLOG  */
 
@@ -332,6 +327,7 @@ article.card {
 
 /* PORTAFOLIO */
 
+
 .banner-area {
   width: 100%;
   height: 100vh;
@@ -346,10 +342,8 @@ article.card {
 @media screen and (max-width:992px) {
   .banner-area {
     background-position: center;
-
   }
 }
-    
 
 .content-area {
   height: 100%;
@@ -402,7 +396,6 @@ section.section-slider-port {
 
 /* IMAGEN DE BODA - PORTAFOLIO  */
 .contenedor figure{
-  
     position:relative;
     cursor: pointer;
     overflow: hidden;
@@ -495,7 +488,6 @@ form label {
   font-size: .8rem;
   color: white;
   text-decoration: solid;
-
   letter-spacing: .2rem;
   margin-bottom: 1rem;
 }
