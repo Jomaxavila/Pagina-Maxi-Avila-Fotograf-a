@@ -361,10 +361,9 @@ article.card {
   text-align: center;
 }
 
-.content h1 {
-  font-size: rem;
-  margin-top: rem;
-  color: rgb(255, 255, 255);
+h1.titulo-port {
+  margin-top: 16rem;
+  
 }
 
 
@@ -377,7 +376,7 @@ article.card {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   cursor: pointer;
-  background: #8fa2a2;
+  background: white;
 }
 
 .separador {
