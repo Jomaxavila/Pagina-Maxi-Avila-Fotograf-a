@@ -400,6 +400,47 @@ section.section-slider-port {
   margin-top: 10rem;
 }
 
+/* IMAGEN DE BODA - PORTAFOLIO  */
+.contenedor figure{
+  
+    position:relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+.contenedor figure img{
+    transition: all 400ms ease-out;
+    
+    
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 224, 235, 0.7);
+    transition: all 300ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+  
+}
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > img{
+  transform: scale(1.3);
+}
+.contenedor figure .capa h3{
+  color: #fff;
+  transition: all 400ms ease-in ;
+}
+.contenedor figure .capa p{
+  color: rgb(225, 221, 221);
+
+}
+
 /* CONTACTO */
 
 .contacto-formulario {
