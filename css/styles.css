@@ -331,7 +331,7 @@ article.card {
 .banner-area {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/LauyAgus/LauyAgusBoda4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
   background-position: end;
   background-repeat: no-repeat;
   background-size: cover;
@@ -437,7 +437,7 @@ section.section-slider-port {
 /* CONTACTO */
 
 .contacto-formulario {
-  background-image: url(/img/EmiFerSesion/Emiyfersesion4.JPG);
+  background-image: url(../img/EmiFerSesion/Emiyfersesion4.JPG);
   background-position: end;
   background-repeat: no-repeat;
   background-size: cover;
