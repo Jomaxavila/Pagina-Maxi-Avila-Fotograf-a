@@ -345,9 +345,11 @@ article.card {
 
 @media screen and (max-width:992px) {
   .banner-area {
-    background-position: center
+    background-position: center;
+
   }
 }
+    
 
 .content-area {
   height: 100%;
@@ -402,10 +404,13 @@ section.section-slider-port {
 
 .contacto-formulario {
   background-image: url(/img/EmiFerSesion/Emiyfersesion4.JPG);
-  background-size: contain;
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
 
 }
-
 .contenedor-contacto {
   height: 40rem;
   width: 50rem;
