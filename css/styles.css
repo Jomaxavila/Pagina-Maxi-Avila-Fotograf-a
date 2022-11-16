@@ -28,6 +28,7 @@ body {
 }
 
 /* HEADER */
+
 .navbar .navbar-nav .nav-link:hover {
   color: #1a173b;
   transform: scale(1.1);
@@ -192,6 +193,7 @@ article.card {
 .nav-item {
   font-size: 1.5rem;
 }
+
 /* MEDIA QUERIES FOOTER */
 @media screen and (max-width: 992px) {
   .flex-fill {
@@ -200,7 +202,7 @@ article.card {
     align-items: center;
     justify-content: center;
   }
-  
+
 }
 
 /* MEDIA QUERIES */
@@ -295,11 +297,20 @@ article.card {
 /* BLOG  */
 
 .banner-imagen {
-  background-image: url('../img/grid/grid4.JPG');
+  background-image: url('/img/grid/grid4.JPG');
+  background-position: end;
+  background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 2rem;
-
+  background-attachment: fixed;
+  background-position-x: center;
 }
+
+@media screen and (max-width:992px) {
+  .banner-area {
+    background-position: center
+  }
+}
+
 
 .titulo-blog h1 {
   color: #dedada;
@@ -316,23 +327,90 @@ article.card {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
 }
 
+/* PORTAFOLIO */
+
+.banner-area {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/img/LauyAgus/LauyAgusBoda4.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+
+@media screen and (max-width:992px) {
+  .banner-area {
+    background-position: center
+  }
+}
+
+.content-area {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+
+.content .btn {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  cursor: pointer;
+  background: #8fa2a2;
+}
+
+.separador {
+  border: solid .1px;
+  color: black;
+  margin: 10rem 0 10rem;
+}
+
+h2.titulo-portafolio{
+  font-size: 3rem;
+}
+h3.titulo-seccion-port  {
+  font-size: 2rem;
+  margin: 3rem auto 3rem 0;
+}
+
+section.section-slider-port {
+  margin-top: 10rem;
+}
 
 /* CONTACTO */
 
 .contacto-formulario {
   background-image: url(/img/EmiFerSesion/Emiyfersesion4.JPG);
   background-size: contain;
- 
+
 }
+
 .contenedor-contacto {
   height: 40rem;
   width: 50rem;
- 
+
 }
-  
+
 
 form {
   background: rgba(0, 0, 0, 0.1);
@@ -341,7 +419,7 @@ form {
   max-width: 100%;
   border-radius: .4rem;
   padding: 4rem 2rem;
-  
+
 }
 
 form .title h2 {
@@ -369,7 +447,7 @@ form label {
   display: block;
   font-size: .8rem;
   color: white;
-  text-decoration:solid;
+  text-decoration: solid;
 
   letter-spacing: .2rem;
   margin-bottom: 1rem;
@@ -385,7 +463,6 @@ form .half .item input {
   background: transparent;
   font-size: 1rem;
   color: white
-  
 }
 
 form .full {
@@ -420,7 +497,8 @@ form .action input {
   outline: 0;
   padding: 0 1.2rem 0 1.3rem;
 
-  margin-right: .6rem;color: white;
+  margin-right: .6rem;
+  color: white;
 
 }
 
@@ -436,28 +514,28 @@ form .icons a:hover {
   background: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 480px) {
-  }
-  .contenedor-contacto{
-    height: auto;
-  }
-  form .half {
-    flex-direction: column;
-    justify-content: center;
-    
-  }
+@media (max-width: 480px) {}
 
-  form .half .item {
-    width: 100%;
-    height: 100%;
-  }
+.contenedor-contacto {
+  height: auto;
+}
 
-  form .action {
-    display: flex;
-    flex-direction: column;
-  }
+form .half {
+  flex-direction: column;
+  justify-content: center;
 
-  form .action input {
-    width: 100%;
-  }
+}
 
+form .half .item {
+  width: 100%;
+  height: 100%;
+}
+
+form .action {
+  display: flex;
+  flex-direction: column;
+}
+
+form .action input {
+  width: 100%;
+}
