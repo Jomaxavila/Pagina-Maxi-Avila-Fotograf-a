@@ -207,6 +207,15 @@ article.card {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .flex-fill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
 
 
 
