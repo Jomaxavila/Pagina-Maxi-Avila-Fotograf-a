@@ -291,7 +291,7 @@ article.card {
 
 /* BLOG  */
 
-.banner-imagen {
+.contenedor-back-blog{
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/grid/grid4.JPG);
   background-position: end;
   background-repeat: no-repeat;
@@ -301,8 +301,12 @@ article.card {
 }
 
 @media screen and (max-width:992px) {
-  .banner-area {
-    background-position: center
+  .contenedor-back-blog {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
   }
 }
 
@@ -328,9 +332,9 @@ article.card {
 /* PORTAFOLIO */
 
 
-.banner-area {
-  width: 100%;
+.contenedor-back-porta{
   height: 100vh;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
   background-position: end;
   background-repeat: no-repeat;
@@ -340,8 +344,12 @@ article.card {
 }
 
 @media screen and (max-width:992px) {
-  .banner-area {
+.contenedor-back-porta {
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
   }
 }
 
@@ -436,18 +444,13 @@ section.section-slider-port {
 
 /* CONTACTO */
 
-.contacto-formulario {
+.contenedor-back-form {
   background-image: url(../img/EmiFerSesion/Emiyfersesion4.JPG);
   background-position: end;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position-x: center;
-
-}
-.contenedor-contacto {
-  height: 40rem;
-  width: 50rem;
 
 }
 
