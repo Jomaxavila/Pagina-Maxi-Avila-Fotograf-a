@@ -7,17 +7,6 @@
 
 }
 
-
-#body-index{
-  background: rgb(237,237,237);
-background: linear-gradient(0deg, rgba(237,237,237,1) 30%, rgba(251,251,251,1) 70%);}
-
- #body-blog:{}
-  background: rgb(218,218,218);
-  background: linear-gradient(90deg, rgba(218,218,218,1) 2%, rgba(198,176,162,1) 50%, rgba(218,218,218,1) 92%);}
-}
-
-
 a {
   text-decoration: none;
   padding: .5rem;
@@ -333,18 +322,18 @@ article.card {
 
 /* CONTACTO */
 
-
+.contacto-formulario {
+  background-image: url(/img/EmiFerSesion/Emiyfersesion4.JPG);
+  background-size: contain;
+ 
+}
 .contenedor-contacto {
   height: 40rem;
   width: 50rem;
-  background-image: url(/img/EmiFerSesion/Emiyfersesion4.JPG);
-  background-position: center;
-  max-width: 100%;
+ 
 }
   
 
-
-}
 form {
   background: rgba(0, 0, 0, 0.1);
   width: 40rem;
