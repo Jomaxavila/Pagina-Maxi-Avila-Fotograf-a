@@ -8,6 +8,15 @@
 }
 
 
+#body-index{
+  background: rgb(237,237,237);
+background: linear-gradient(0deg, rgba(237,237,237,1) 30%, rgba(251,251,251,1) 70%);}
+
+ #body-blog:{}
+  background: rgb(218,218,218);
+  background: linear-gradient(90deg, rgba(218,218,218,1) 2%, rgba(198,176,162,1) 50%, rgba(218,218,218,1) 92%);}
+}
+
 
 a {
   text-decoration: none;
@@ -31,7 +40,9 @@ body {
 
 /* HEADER */
 .navbar .navbar-nav .nav-link:hover {
-  color: #114e9f;
+  color: #1a173b;
+  transform: scale(1.1);
+  transition: all ease 3ms;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -85,10 +96,9 @@ body {
 .titulo-index h1 {
   font-size: 2.2rem;
   text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
-  margin: 4rem 0 4rem;
   text-align: center;
-  position: relative;
-  margin-top: 8rem;
+  justify-content: center;
+  margin: 10rem auto 5rem auto;
 }
 
 
@@ -193,9 +203,8 @@ article.card {
 }
 
 /* FOOTER */
-
-footer {
-  font-size: 1rem;
+.nav-item {
+  font-size: 1.5rem;
 }
 
 
@@ -302,32 +311,33 @@ footer {
 
 .titulo-blog h1 {
   color: #dedada;
-
-
 }
 
 .text-center h2 {
   font-size: 2.5rem;
   text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
-  margin: 8rem 0 10rem;
+  margin: 6rem 0 4rem;
 
 }
-
-
-
 
 .col-lg-3 h6 {
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
 }
 
 
 /* CONTACTO */
+#body-contacto{
+  background: rgb(228,228,228);
+  background: linear-gradient(90deg, rgba(228,228,228,1) 38%, rgba(223,223,223,1) 99%);
+}
 
 .contenedor-contacto {
   height: 40rem;
   width: 50rem;
-  background-image: url(/img/EmiFerSesion/048EmiyFerSesion.JPG);
+  background-image: url(/img/EmiFerSesion/Emiyfersesion4.JPG);
   background-position: center;
   max-width: 100%;
   
@@ -419,6 +429,7 @@ form .action input {
   letter-spacing: .2rem;
   outline: 0;
   padding: 0 1.2rem 0 1.3rem;
+
   margin-right: .6rem;color: white;
 
 }
@@ -436,8 +447,6 @@ form .icons a:hover {
 }
 
 @media (max-width: 480px) {
-
-
   }
   .contenedor-contacto{
     height: auto;
@@ -446,29 +455,19 @@ form .icons a:hover {
     flex-direction: column;
     justify-content: center;
     
-
-  
   }
 
   form .half .item {
     width: 100%;
     height: 100%;
-
-    
   }
 
   form .action {
     display: flex;
     flex-direction: column;
-
-
   }
 
   form .action input {
     width: 100%;
-
-  
-
   }
 
-}
