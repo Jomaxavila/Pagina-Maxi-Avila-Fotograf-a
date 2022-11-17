@@ -6,7 +6,6 @@
   font-family: 'Montserrat', sans-serif;
 
 }
-
 a {
   text-decoration: none;
   padding: .5rem;
@@ -15,17 +14,12 @@ a {
 
 ul {
   list-style: none;
-
 }
 
 img {
   max-width: 100%;
 }
 
-/* BODY INDEX */
-body {
-  min-height: 100vh;
-}
 
 /* HEADER */
 
@@ -81,8 +75,8 @@ body {
 }
 
 
-
 /* MAIN */
+
 .titulo-index h1 {
   font-size: 2.2rem;
   text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
@@ -91,9 +85,16 @@ body {
   margin: 10rem auto 5rem auto;
 }
 
+@media screen and (max-width: 1147px) {
+
+  .titulo-index h1 {
+    font-size: 1.9rem;
+  }
+
+}
 
 
-/* CARDS */
+/* CARDS "NO BOOTSTRAP INDEX */
 
 .titulo-cards h2 {
   font-size: 2.5rem;
@@ -190,6 +191,7 @@ article.card {
 }
 
 /* FOOTER */
+
 .nav-item {
   font-size: 1.5rem;
 }
@@ -201,29 +203,6 @@ article.card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-}
-
-/* MEDIA QUERIES CONTENIDO INDEX*/
-
-
-@media screen and (max-width: 1147px) {
-
-  .titulo-index h1 {
-    font-size: 1.9rem;
-  }
-
-}
-
-@media screen and (max-width: 992px) {
-
-  .titulo-index h1 {
-    font-size: 1.3rem;
-  }
-
-  .titulo-cards h2 {
-    font-size: 2rem;
   }
 
 }
@@ -311,7 +290,6 @@ h1.titulo-maxi {
 
 }
 
-
 /* BLOG  */
 
 .contenedor-back-blog {
@@ -345,12 +323,18 @@ h1.titulo-maxi {
 
 }
 
-.col-lg-3 h6 {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.col-lg-3 img {
+  transition: all 5s ease;
 
 }
+.col-lg-3:hover{
+  transform: scale(1.1);
+  
+}
+
+
+
 
 /* PORTAFOLIO */
 
@@ -437,11 +421,12 @@ h3.titulo-seccion-port {
   }
 }
 
-1 section.section-slider-port {
+section.section-slider-port {
   margin-top: 10rem;
 }
 
 /* IMAGEN DE BODA - PORTAFOLIO  */
+
 .contenedor figure {
   position: relative;
   cursor: pointer;
