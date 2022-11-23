@@ -1,104 +1,29 @@
-/* MAIN */
+/* HOLA SOY MAXI  */
 
-// TITULO PRINCIPAL 
-
-.titulo-index {
-
+.titulo-maxi {
     h1 {
-        font-size: 2.2rem;
-        text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
-        text-align: center;
-        justify-content: center;
-        margin: 10rem auto 5rem auto;
-
+        animation: movimiento 3s infinite;
+        transform: translate(0);
     }
 }
 
-/* SECCION CARDS "NO BOOTSTRAP" */
+@keyframes movimiento {
+    from {
+        transform: translateY(0);
+    }
 
-.titulo-cards {
-    h2 {
-        font-size: 2.5rem;
-        text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
-        padding-top: 10rem;
-        text-align: center;
+    to {
+        transform: translateY(7rem);
     }
 }
 
 
-.card-wrap {
-
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding: 2rem;
-    margin: 5rem 0 5rem;
-
-    .card {
-        max-width: 25rem;
-        background-color: #e5e6e4;
-        border-radius: 0.5rem;
-        padding: 0rem .7rem;
-        margin: .7rem .7rem;
-        font-size: .8rem;
-        text-justify: auto;
-        box-shadow: 0 0 .6rem rgba(239, 241, 243, 0.667);
-
-        .header-card {
-            border-radius: .8rem .8rem 0 0;
-            max-height: 2rem;
-            height: 2rem;
-            width: 100%;
-
-            img {
-                max-width: 100%;
-                border-radius: .6rem;
-                margin-top: .7rem;
-            }
-
-        }
-
-    }
-
-    .footer-card {
-        .categoria-card {
-            margin-bottom: 1rem;
-            display: flex;
-            justify-content: start;
-
-            a {
-                background-color: #00a6fb;
-                color: white;
-                border-radius: .2rem;
-                padding: .6rem 2.3rem;
-                margin-top: 15rem;
-            }
-        }
-    }
-
-
-    .perfil-card {
-        display: flex;
-        align-items: center;
-
-        .img-perfil-card {
-            display: flex;
-
-            img {
-                width: 3rem;
-                margin: 1rem 1rem 1rem 0;
-                border-radius: 50%;
-
-                .text-perfil-card {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                span:nth-child(2) {
-                    color: #b3b2b2;
-                }
-            }
-        }
-    }
+.contenedor-back-sobremi {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Maxi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position-x: center;
 
 }

@@ -1,3 +1,16 @@
+@media screen and (max-width: 992px) {
+  .flex-fill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 935px) {
+  .card-wrap {
+    justify-content: center;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -55,38 +68,25 @@ img {
   transition: all ease 3ms;
 }
 
-@media screen and (max-width: 1147px) {
-  .titulo-index h1 {
-    font-size: 1.9rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .flex-fill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (max-width: 935px) {
-  .card-wrap {
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 769px) {
-  .titulo-index h1 {
-    font-size: 1.3rem;
-  }
-}
 /* MAIN */
 .titulo-index h1 {
-  font-size: 2.2rem;
+  font-size: 3rem;
   text-shadow: 0.1rem 0.1rem 0 rgba(225, 236, 246, 0.667);
   text-align: center;
   justify-content: center;
   margin: 10rem auto 5rem auto;
 }
 
+@media screen and (max-width: 992px) {
+  .titulo-index h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .titulo-index h1 {
+    font-size: 1rem;
+  }
+}
 /* SECCION CARDS "NO BOOTSTRAP" */
 .titulo-cards h2 {
   font-size: 2.5rem;
@@ -153,6 +153,39 @@ img {
 }
 .card-wrap .perfil-card .img-perfil-card img span:nth-child(2) {
   color: #b3b2b2;
+}
+
+/* HOLA SOY MAXI  */
+.titulo-maxi h1 {
+  animation: movimiento 3s infinite;
+  transform: translate(0);
+}
+
+@keyframes movimiento {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(7rem);
+  }
+}
+.contenedor-back-sobremi {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Maxi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+
+/* BLOG  */
+.contenedor-back-blog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/grid/grid4.JPG);
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

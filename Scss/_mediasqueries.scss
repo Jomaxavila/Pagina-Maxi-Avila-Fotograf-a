@@ -1,11 +1,7 @@
-@media screen and (max-width: 1147px) {
-
-    .titulo-index h1 {
-        font-size: 1.9rem;
-    }
-}
+// MEDIA QUERIES
 
 
+// * MEDIA QUERIES GLOBAL  FOOTER */
 @media screen and (max-width: 992px) {
     .flex-fill {
         display: flex;
@@ -16,15 +12,15 @@
 
 }
 
+//  PAGE 0 
+// TITULO PRINCIPAL 
+
+
+
+// * MEDIA QUERIES CARDS - PAGE 0 */
+
 @media (max-width: 935px) {
     .card-wrap {
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 769px) {
-
-    .titulo-index h1 {
-        font-size: 1.3rem;
     }
 }
