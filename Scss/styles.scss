@@ -1,9 +1,9 @@
 @import "variables";
-@import "Globales";
-@import "layout";
-@import "0inicio";
-@import "1hola";
-@import "2porta";
-@import "3blog";
-@import "4info";
-@import "5contact";
+@import "globales";
+@import "componentes";
+@import 'mediasqueries';
+@import "page1";
+@import "page2";
+@import "page3";
+@import "page4";
+@import "page5";

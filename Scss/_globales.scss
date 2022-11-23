@@ -20,8 +20,59 @@ img {
     max-width: 100%;
 }
 
-h1,
-h2,
-h3 {
-    text-align: center;
+// NAV BAR PAGINAS
+
+/* HEADER */
+
+.navbar {
+
+    .navbar-nav {
+        gap: 1rem;
+
+        .nav-link:hover {
+            color: #1a173b;
+            transform: scale(1.1);
+            transition: all ease 3ms;
+        }
+    }
+}
+
+.navbar {
+    .navbar-nav {
+        .nav-link {
+            color: #525050;
+            font-size: 1rem;
+        }
+    }
+}
+
+.navbar {
+    .navbar-nav {
+        .nav-item {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                background-color: #cacccd;
+                width: 0%;
+                content: "";
+                height: 0.1rem;
+            }
+        }
+    }
+}
+
+.navbar {
+    .navbar-nav {
+        .nav-item {
+            &:hover::after {
+                width: 100%;
+                transition: all ease 3ms;
+            }
+        }
+    }
 }
