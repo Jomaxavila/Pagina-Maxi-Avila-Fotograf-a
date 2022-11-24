@@ -4,39 +4,20 @@
 
 .titulo-index {
     h1 {
+        font-family: $font2;
         font-size: 3rem;
-        text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
         text-align: center;
         justify-content: center;
         margin: 10rem auto 5rem auto;
-
     }
 }
-
-
-@media screen and (max-width:992px) {
-    .titulo-index {
-        h1 {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@media screen and (max-width:769px) {
-    .titulo-index {
-        h1 {
-            font-size: 1rem;
-        }
-    }
-}
-
 
 
 /* SECCION CARDS "NO BOOTSTRAP" */
 
 .titulo-cards {
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
         padding-top: 10rem;
         text-align: center;
@@ -84,11 +65,10 @@
             justify-content: start;
 
             a {
-                background-color: #00a6fb;
-                color: white;
-                border-radius: .2rem;
+                @extend .boton-gral;
                 padding: .6rem 2.3rem;
                 margin-top: 15rem;
+                background-color: $azulboton;
             }
         }
     }
@@ -117,4 +97,48 @@
         }
     }
 
+}
+
+
+// MEDIA QUERIES 
+
+
+// TITULO PRINCIPAL 
+
+
+@media screen and (max-width:1200px) {
+    .titulo-index {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:769px) {
+    .titulo-index {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+
+    // TITULO CARDS 
+
+    @media screen and (max-width:769px) {
+
+        .titulo-cards {
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+
+    //  CARDS 
+
+    @media (max-width: 935px) {
+        .card-wrap {
+            justify-content: center;
+        }
+    }
 }

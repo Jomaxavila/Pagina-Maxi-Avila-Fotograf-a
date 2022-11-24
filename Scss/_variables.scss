@@ -1,5 +1,27 @@
 // COLORES 
-$color1: #ffff;
-$color2: #000000;
-$color3: #cacccd;
-$color4: #00a6fb;
+$blancoclaro: #dedada;
+$grisclaro: #cacccd;
+$azulboton: #00a6fb;
+$grisboton: #ffffff13;
+
+
+// FUENTES TITULOS 
+$titprincipal: 2.2rem;
+$titsecundario: 2rem;
+
+
+// TIPOS DE FUENTES
+$font1: 'Roboto', sans-serif;
+$font2: 'Lato', sans-serif;
+$font3: 'Montserrat', sans-serif;
+
+
+// MIXIN  
+
+@mixin back-portada {
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+}

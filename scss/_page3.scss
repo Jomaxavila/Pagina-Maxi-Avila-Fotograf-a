@@ -1,0 +1,35 @@
+/* BLOG  */
+
+.contenedor-back-blog {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/grid/grid4.JPG);
+    @include back-portada;
+}
+
+@media screen and (max-width:992px) {
+    .contenedor-back-blog {
+        @include back-portada;
+    }
+}
+
+
+.titulo-blog h1 {
+    color: #dedada;
+}
+
+.text-center h2 {
+    font-size: 2.5rem;
+    text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
+    margin: 6rem 0 4rem;
+
+}
+
+
+.col-lg-3 img {
+    transition: all 5s ease;
+
+}
+
+.col-lg-3:hover {
+    transform: scale(1.1);
+
+}

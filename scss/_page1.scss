@@ -5,17 +5,19 @@
         animation: movimiento 3s infinite;
         transform: translate(0);
     }
+
+    @keyframes movimiento {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(7rem);
+        }
+
+    }
 }
 
-@keyframes movimiento {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(7rem);
-    }
-}
 
 
 .contenedor-back-sobremi {

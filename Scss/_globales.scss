@@ -3,7 +3,7 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: $font3;
 }
 
 a {
@@ -20,59 +20,18 @@ img {
     max-width: 100%;
 }
 
-// NAV BAR PAGINAS
+// EXTEND BOTONES 
 
-/* HEADER */
+.boton-gral {
+    background: transparent;
+    border-radius: .1rem;
+    border: .1rem solid white;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    outline: 0;
+    padding: 0 1.2rem 0 1.3rem;
+    color: white;
 
-.navbar {
-
-    .navbar-nav {
-        gap: 1rem;
-
-        .nav-link:hover {
-            color: #1a173b;
-            transform: scale(1.1);
-            transition: all ease 3ms;
-        }
-    }
-}
-
-.navbar {
-    .navbar-nav {
-        .nav-link {
-            color: #525050;
-            font-size: 1rem;
-        }
-    }
-}
-
-.navbar {
-    .navbar-nav {
-        .nav-item {
-            position: relative;
-
-            &::after {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                background-color: #cacccd;
-                width: 0%;
-                content: "";
-                height: 0.1rem;
-            }
-        }
-    }
-}
-
-.navbar {
-    .navbar-nav {
-        .nav-item {
-            &:hover::after {
-                width: 100%;
-                transition: all ease 3ms;
-            }
-        }
-    }
 }
