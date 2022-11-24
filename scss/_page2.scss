@@ -1,92 +1,76 @@
-/* PORTAFOLIO */
+/**** PORTAFOLIO****/
 
+// MAIN 
 
-.contenedor-back-porta {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
-    @include back-portada;
-}
+main {
+    .contenedor-back-porta {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
+        @include back-portada;
 
+        .content-area {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            .content {
+                text-align: center;
+            }
 
-.content-area {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+            .btn {
+                @extend .boton-gral;
+                padding: 1rem;
+                margin-top: 3rem;
 
+                &:hover {
+                    background: $grisboton;
+                }
+            }
+        }
+    }
 
-}
+    .portafolio-contenedor {
 
-.content {
-    text-align: center;
-}
+        .separador {
+            @extend .linediv;
+        }
 
-h1.titulo-port {
-    margin-top: 10rem;
+        .titulo-portafolio {
+            font-size: 3rem;
+        }
 
-}
-
-
-.content .btn {
-    @extend .boton-gral;
-    padding: 1rem;
-    margin-top: 3rem;
-
-    &:hover {
-        background: $grisboton;
+        .titulo-port {
+            margin-top: 13rem;
+        }
     }
 
 }
 
-.separador {
-    border: solid .1px;
-    color: black;
-    margin: 10rem 0 10rem;
-}
+// SECCION BODAS 
 
-h2.titulo-portafolio {
-    font-size: 3rem;
-}
-
-h3.titulo-seccion-port {
-    font-size: 2rem;
-    margin: 3rem auto 3rem 0;
-}
-
-@media screen and (max-width: 769px) {
-
-    h1.titulo-port {
-        font-size: 1.5rem;
-
-    }
-
-    h2.titulo-portafolio {
-        font-size: 1.5rem;
-    }
-
-    h3.titulo-seccion-port {
-        font-size: 1.3rem;
-        text-align: center;
+section {
+    .titulo-seccion-port {
+        font-size: 2rem;
+        margin: 3rem auto 3rem 0;
     }
 }
 
-section.section-slider-port {
-    margin-top: 10rem;
+section {
+    .slider-port {
+        margin-top: 10rem;
+    }
 }
 
-/* IMAGEN DE BODA - PORTAFOLIO  */
+/* IMAGEN DE BODA - */
 
 .contenedor figure {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-
 }
 
 .contenedor figure img {
-    transition: all 400ms ease-out;
-
-
+    transition: all 400ms ease;
 }
 
 .contenedor figure .capa {
@@ -95,10 +79,9 @@ section.section-slider-port {
     width: 100%;
     height: 100%;
     background: rgba(200, 224, 235, 0.7);
-    transition: all 300ms ease-out;
+    transition: all 300ms ease;
     opacity: 0;
     visibility: hidden;
-
 }
 
 .contenedor figure:hover>.capa {
@@ -117,19 +100,30 @@ section.section-slider-port {
 
 .contenedor figure .capa p {
     color: rgb(225, 221, 221);
-
 }
 
 
-// ----MEDIA QUERIES ----
-
+// ----MEDIA QUERIES PORTAFOLIO ----
 
 @media screen and (max-width:992px) {
     .contenedor-back-porta {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position-x: center;
+        @include back-portada;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+
+    .titulo-port {
+        font-size: 1.5rem;
+    }
+
+    .titulo-portafolio {
+        font-size: 1.5rem;
+    }
+
+    h3.titulo-seccion-port {
+        font-size: 1.3rem;
+        text-align: center;
     }
 }

@@ -41,63 +41,64 @@
         font-size: .8rem;
         text-justify: auto;
         box-shadow: 0 0 .6rem rgba(239, 241, 243, 0.667);
-
-        .header-card {
-            border-radius: .8rem .8rem 0 0;
-            max-height: 2rem;
-            height: 2rem;
-            width: 100%;
-
-            img {
-                max-width: 100%;
-                border-radius: .6rem;
-                margin-top: .7rem;
-            }
-
-        }
-
     }
 
-    .footer-card {
-        .categoria-card {
-            margin-bottom: 1rem;
-            display: flex;
-            justify-content: start;
-
-            a {
-                @extend .boton-gral;
-                padding: .6rem 2.3rem;
-                margin-top: 15rem;
-                background-color: $azulboton;
-            }
-        }
+    .header-card {
+        border-radius: .8rem .8rem 0 0;
+        max-height: 2rem;
+        height: 2rem;
+        width: 100%;
     }
 
-    .perfil-card {
-        display: flex;
-        align-items: center;
-
-        .img-perfil-card {
-            display: flex;
-
-            img {
-                width: 3rem;
-                margin: 1rem 1rem 1rem 0;
-                border-radius: 50%;
-
-                .text-perfil-card {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                span:nth-child(2) {
-                    color: #b3b2b2;
-                }
-            }
-        }
+    img {
+        max-width: 100%;
+        border-radius: .6rem;
+        margin-top: .7rem;
     }
-
 }
+
+
+
+.footer-card {
+    .categoria-card {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: start;
+
+        a {
+            @extend .boton-gral;
+            padding: .6rem 2.3rem;
+            margin-top: 15rem;
+            background-color: $azulboton;
+        }
+    }
+}
+
+.perfil-card {
+    display: flex;
+    align-items: center;
+
+    .img-perfil-card {
+        display: flex;
+
+        img {
+            width: 3rem;
+            margin: 1rem 1rem 1rem 0;
+            border-radius: 50%;
+
+            .text-perfil-card {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            span:nth-child(2) {
+                color: #b3b2b2;
+            }
+        }
+    }
+}
+
+
 
 
 // MEDIA QUERIES 

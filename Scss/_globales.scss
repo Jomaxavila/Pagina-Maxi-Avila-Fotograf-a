@@ -20,7 +20,9 @@ img {
     max-width: 100%;
 }
 
-// EXTEND BOTONES 
+// *****EXTEND****
+
+// BOTONES 
 
 .boton-gral {
     background: transparent;
@@ -33,5 +35,12 @@ img {
     outline: 0;
     padding: 0 1.2rem 0 1.3rem;
     color: white;
+}
 
+// SEPARADORES 
+
+.linediv {
+    border: solid .1px;
+    color: black;
+    margin: 10rem 0 10rem;
 }

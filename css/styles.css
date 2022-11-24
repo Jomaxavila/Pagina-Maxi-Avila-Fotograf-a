@@ -20,7 +20,7 @@ img {
   max-width: 100%;
 }
 
-.boton-gral, .content .btn, .card-wrap .footer-card .categoria-card a {
+.boton-gral, main .contenedor-back-porta .content-area .btn, .footer-card .categoria-card a {
   background: transparent;
   border-radius: 0.1rem;
   border: 0.1rem solid white;
@@ -31,6 +31,12 @@ img {
   outline: 0;
   padding: 0 1.2rem 0 1.3rem;
   color: white;
+}
+
+.linediv, .separador {
+  border: solid 0.1px;
+  color: black;
+  margin: 10rem 0 10rem;
 }
 
 /* HEADER */
@@ -113,44 +119,46 @@ img {
   text-justify: auto;
   box-shadow: 0 0 0.6rem rgba(239, 241, 243, 0.667);
 }
-.card-wrap .card .header-card {
+.card-wrap .header-card {
   border-radius: 0.8rem 0.8rem 0 0;
   max-height: 2rem;
   height: 2rem;
   width: 100%;
 }
-.card-wrap .card .header-card img {
+.card-wrap img {
   max-width: 100%;
   border-radius: 0.6rem;
   margin-top: 0.7rem;
 }
-.card-wrap .footer-card .categoria-card {
+
+.footer-card .categoria-card {
   margin-bottom: 1rem;
   display: flex;
   justify-content: start;
 }
-.card-wrap .footer-card .categoria-card a {
+.footer-card .categoria-card a {
   padding: 0.6rem 2.3rem;
   margin-top: 15rem;
   background-color: #00a6fb;
 }
-.card-wrap .perfil-card {
+
+.perfil-card {
   display: flex;
   align-items: center;
 }
-.card-wrap .perfil-card .img-perfil-card {
+.perfil-card .img-perfil-card {
   display: flex;
 }
-.card-wrap .perfil-card .img-perfil-card img {
+.perfil-card .img-perfil-card img {
   width: 3rem;
   margin: 1rem 1rem 1rem 0;
   border-radius: 50%;
 }
-.card-wrap .perfil-card .img-perfil-card img .text-perfil-card {
+.perfil-card .img-perfil-card img .text-perfil-card {
   display: flex;
   flex-wrap: wrap;
 }
-.card-wrap .perfil-card .img-perfil-card img span:nth-child(2) {
+.perfil-card .img-perfil-card img span:nth-child(2) {
   color: #b3b2b2;
 }
 
@@ -190,16 +198,6 @@ img {
 
 .contenedor-back-sobremi {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Maxi.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position-x: center;
-}
-
-/* PORTAFOLIO */
-.contenedor-back-porta {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
   background-position: end;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,57 +205,44 @@ img {
   background-position-x: center;
 }
 
-.content-area {
+/**** PORTAFOLIO****/
+main .contenedor-back-porta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+main .contenedor-back-porta .content-area {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.content {
+main .contenedor-back-porta .content-area .content {
   text-align: center;
 }
-
-h1.titulo-port {
-  margin-top: 10rem;
-}
-
-.content .btn {
+main .contenedor-back-porta .content-area .btn {
   padding: 1rem;
   margin-top: 3rem;
 }
-.content .btn:hover {
+main .contenedor-back-porta .content-area .btn:hover {
   background: rgba(255, 255, 255, 0.0745098039);
 }
-
-.separador {
-  border: solid 0.1px;
-  color: black;
-  margin: 10rem 0 10rem;
+main .contenedor-back-porta .titulo-port {
+  margin-top: 13rem;
 }
-
-h2.titulo-portafolio {
+main .contenedor-back-porta .titulo-portafolio {
   font-size: 3rem;
 }
 
-h3.titulo-seccion-port {
+.titulo-seccion-port {
   font-size: 2rem;
   margin: 3rem auto 3rem 0;
 }
 
-@media screen and (max-width: 769px) {
-  h1.titulo-port {
-    font-size: 1.5rem;
-  }
-  h2.titulo-portafolio {
-    font-size: 1.5rem;
-  }
-  h3.titulo-seccion-port {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-}
-section.section-slider-port {
+.slider-port {
   margin-top: 10rem;
 }
 
@@ -269,7 +254,7 @@ section.section-slider-port {
 }
 
 .contenedor figure img {
-  transition: all 400ms ease-out;
+  transition: all 400ms ease;
 }
 
 .contenedor figure .capa {
@@ -278,7 +263,7 @@ section.section-slider-port {
   width: 100%;
   height: 100%;
   background: rgba(200, 224, 235, 0.7);
-  transition: all 300ms ease-out;
+  transition: all 300ms ease;
   opacity: 0;
   visibility: hidden;
 }
@@ -303,11 +288,23 @@ section.section-slider-port {
 
 @media screen and (max-width: 992px) {
   .contenedor-back-porta {
-    background-position: center;
+    background-position: end;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position-x: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  .titulo-port {
+    font-size: 1.5rem;
+  }
+  .titulo-portafolio {
+    font-size: 1.5rem;
+  }
+  h3.titulo-seccion-port {
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
 /* BLOG  */
