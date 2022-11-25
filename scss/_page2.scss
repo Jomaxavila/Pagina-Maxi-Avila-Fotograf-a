@@ -9,10 +9,9 @@ main {
 
         .content-area {
             height: 100vh;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex-jus-alg-cent;
+
 
             .titulo-port {
                 margin-top: 13rem;
@@ -109,15 +108,15 @@ section {
 @media screen and (max-width: 769px) {
 
     .titulo-port {
-        font-size: 1.5rem;
+        font-size: $titercero
     }
 
     .titulo-portafolio {
-        font-size: 1.5rem;
+        font-size: $titercero;
     }
 
     h3.titulo-seccion-port {
-        font-size: 1.3rem;
+        font-size: $titercero;
         text-align: center;
     }
 }

@@ -1,12 +1,12 @@
 // * CONTACTO */
-
+// FONDO DE FORMULARIO
 .contenedor-back-form {
     background-image: url(../img/EmiFerSesion/Emiyfersesion4.JPG);
     @include back-portada;
 
 }
 
-
+// FORMULARIO DE CONTACTO
 form {
     background: rgba(0, 0, 0, 0.1);
     width: 40rem;
@@ -18,7 +18,7 @@ form {
     label {
         display: block;
         font-size: .8rem;
-        color: white;
+        color: $blancoclaro;
         text-decoration: solid;
         letter-spacing: .2rem;
         margin-bottom: 1rem;
@@ -26,18 +26,15 @@ form {
 
     .title {
         letter-spacing: .5rem;
-        border-bottom: .1rem solid white;
+        border-bottom: .1rem solid $blancoclaro;
         display: inline-block;
         padding-bottom: .5rem;
         margin-bottom: 2rem;
-        color: white;
+        color: $blancoclaro;
     }
 
     .half {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        justify-content: center;
+        @include flex-col-bet-cent;
 
         .item {
             display: flex;
@@ -49,14 +46,14 @@ form {
 
         input {
             border-radius: .1rem;
-            border: 1px solid white;
+            border: 1px solid $blancoclaro;
             outline: 0;
             padding: 1rem;
             width: 100%;
             height: 3rem;
             background: transparent;
             font-size: 1rem;
-            color: white
+            color: $blancoclaro
         }
     }
 }
@@ -67,13 +64,13 @@ form {
     textarea {
         background: transparent;
         border-radius: .1rem;
-        border: .1rem solid white;
+        border: .1rem solid $blancoclaro;
         outline: 0;
         padding: 1rem 1rem;
         width: 100%;
         height: 15rem;
         font-size: 1rem;
-        color: white
+        color: $blancoclaro
     }
 }
 
@@ -84,28 +81,18 @@ form {
 }
 
 input {
-    background: transparent;
-    border-radius: .1rem;
-    border: .1rem solid white;
-    cursor: pointer;
-    font-size: .8rem;
-    font-weight: 400;
+    @extend .boton-gral;
     height: 3rem;
-    letter-spacing: .2rem;
-    outline: 0;
-    padding: 0 1.2rem 0 1.3rem;
     margin-right: .6rem;
-    color: white;
     width: 100%;
 
     &[type="submit"] {
         background: $blancoclaro;
         color: $negrotop;
     }
-
 }
 
-
+// HOVER Y BACKGROUND IMPUTS Y TEXAREA
 
 form .half .item input:focus,
 form .full textarea:focus,

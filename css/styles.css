@@ -20,22 +20,22 @@ img {
   max-width: 100%;
 }
 
-.boton-gral, main .contenedor-back-porta .content-area .btn, .footer-card .categoria-card a {
+.boton-gral, input, main .contenedor-back-porta .content-area .btn, .footer-card .categoria-card a {
   background: transparent;
   border-radius: 0.1rem;
-  border: 0.1rem solid white;
+  border: 0.1rem solid #fafafa;
   cursor: pointer;
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
   outline: 0;
   padding: 0 1.2rem 0 1.3rem;
-  color: white;
+  color: #fafafa;
 }
 
 .linediv, main .portafolio-contenedor .separador {
   border: solid 0.1px;
-  color: black;
+  color: #040303;
   margin: 10rem 0 10rem;
 }
 
@@ -217,8 +217,8 @@ main .contenedor-back-porta {
 }
 main .contenedor-back-porta .content-area {
   height: 100vh;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -289,7 +289,7 @@ section .slider-port {
     font-size: 1.5rem;
   }
   h3.titulo-seccion-port {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 }
@@ -363,18 +363,18 @@ form {
 form label {
   display: block;
   font-size: 0.8rem;
-  color: white;
+  color: #fafafa;
   text-decoration: solid;
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
 }
 form .title {
   letter-spacing: 0.5rem;
-  border-bottom: 0.1rem solid white;
+  border-bottom: 0.1rem solid #fafafa;
   display: inline-block;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #fafafa;
 }
 form .half {
   display: flex;
@@ -391,14 +391,14 @@ form .half .item {
 }
 form .half input {
   border-radius: 0.1rem;
-  border: 1px solid white;
+  border: 1px solid #fafafa;
   outline: 0;
   padding: 1rem;
   width: 100%;
   height: 3rem;
   background: transparent;
   font-size: 1rem;
-  color: white;
+  color: #fafafa;
 }
 
 .full {
@@ -407,13 +407,13 @@ form .half input {
 .full textarea {
   background: transparent;
   border-radius: 0.1rem;
-  border: 0.1rem solid white;
+  border: 0.1rem solid #fafafa;
   outline: 0;
   padding: 1rem 1rem;
   width: 100%;
   height: 15rem;
   font-size: 1rem;
-  color: white;
+  color: #fafafa;
 }
 
 .action {
@@ -423,18 +423,8 @@ form .half input {
 }
 
 input {
-  background: transparent;
-  border-radius: 0.1rem;
-  border: 0.1rem solid white;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: 400;
   height: 3rem;
-  letter-spacing: 0.2rem;
-  outline: 0;
-  padding: 0 1.2rem 0 1.3rem;
   margin-right: 0.6rem;
-  color: white;
   width: 100%;
 }
 input[type=submit] {

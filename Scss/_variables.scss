@@ -9,6 +9,7 @@ $negrotop: #040303;
 // FUENTES TITULOS 
 $titprincipal: 2.2rem;
 $titsecundario: 2rem;
+$titercero: 1.5rem;
 
 
 // FAMILIA DE FUENTES
@@ -36,4 +37,16 @@ $font2: 'Montserrat', sans-serif;
 
 }
 
-@mixin displax-flex-centrado {}
+@mixin flex-col-bet-cent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+@mixin flex-jus-alg-cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
