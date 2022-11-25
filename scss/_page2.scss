@@ -10,11 +10,12 @@ main {
         .content-area {
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .content {
-                text-align: center;
+            .titulo-port {
+                margin-top: 13rem;
             }
 
             .btn {
@@ -39,20 +40,20 @@ main {
             font-size: 3rem;
         }
 
-        .titulo-port {
-            margin-top: 13rem;
-        }
     }
-
 }
 
-// SECCION BODAS 
+// SECTION BODAS 
 
 section {
-    .titulo-seccion-port {
-        font-size: 2rem;
-        margin: 3rem auto 3rem 0;
+    .bodas-contenedor {
+        .titulo-seccion-port {
+            font-size: 2rem;
+            margin: 3rem auto 3rem 0;
+        }
+
     }
+
 }
 
 section {
@@ -61,45 +62,38 @@ section {
     }
 }
 
-/* IMAGEN DE BODA - */
+/* IMAGEN DE BODA y SESION- */
 
 .contenedor figure {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-}
 
-.contenedor figure img {
-    transition: all 400ms ease;
-}
+    img {
+        transition: all 400ms ease;
+    }
 
-.contenedor figure .capa {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(200, 224, 235, 0.7);
-    transition: all 300ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
+    .capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(200, 224, 235, 0.7);
+        transition: all 300ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
 
-.contenedor figure:hover>.capa {
-    opacity: 1;
-    visibility: visible;
-}
+    &:hover> {
+        .capa {
+            opacity: 1;
+            visibility: visible;
+        }
 
-.contenedor figure:hover>img {
-    transform: scale(1.3);
-}
-
-.contenedor figure .capa h3 {
-    color: #fff;
-    transition: all 400ms ease-in;
-}
-
-.contenedor figure .capa p {
-    color: rgb(225, 221, 221);
+        img {
+            transform: scale(1.3);
+        }
+    }
 }
 
 

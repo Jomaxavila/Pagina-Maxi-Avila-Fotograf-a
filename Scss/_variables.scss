@@ -10,13 +10,13 @@ $titprincipal: 2.2rem;
 $titsecundario: 2rem;
 
 
-// TIPOS DE FUENTES
+// FAMILIA DE FUENTES
 $font1: 'Roboto', sans-serif;
 $font2: 'Lato', sans-serif;
 $font3: 'Montserrat', sans-serif;
 
 
-// MIXIN  
+// MIXINS  
 
 @mixin back-portada {
     background-position: end;
@@ -25,3 +25,14 @@ $font3: 'Montserrat', sans-serif;
     background-attachment: fixed;
     background-position-x: center;
 }
+
+@mixin back-portada-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position-x: center;
+
+}
+
+@mixin displax-flex-centrado {}

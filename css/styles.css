@@ -33,7 +33,7 @@ img {
   color: white;
 }
 
-.linediv, .separador {
+.linediv, main .portafolio-contenedor .separador {
   border: solid 0.1px;
   color: black;
   margin: 10rem 0 10rem;
@@ -182,8 +182,9 @@ img {
     justify-content: center;
   }
 }
-/* HOLA SOY MAXI  */
+/* PAGE 1 - HOLA SOY MAXI  */
 .titulo-maxi h1 {
+  font-family: "Lato", sans-serif;
   animation: movimiento 3s infinite;
   transform: translate(0);
 }
@@ -198,9 +199,9 @@ img {
 
 .contenedor-back-sobremi {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Maxi.jpg);
-  background-position: end;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-position-x: center;
 }
@@ -217,11 +218,12 @@ main .contenedor-back-porta {
 main .contenedor-back-porta .content-area {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .contenedor-back-porta .content-area .content {
-  text-align: center;
+main .contenedor-back-porta .content-area .titulo-port {
+  margin-top: 13rem;
 }
 main .contenedor-back-porta .content-area .btn {
   padding: 1rem;
@@ -230,33 +232,28 @@ main .contenedor-back-porta .content-area .btn {
 main .contenedor-back-porta .content-area .btn:hover {
   background: rgba(255, 255, 255, 0.0745098039);
 }
-main .contenedor-back-porta .titulo-port {
-  margin-top: 13rem;
-}
-main .contenedor-back-porta .titulo-portafolio {
+main .portafolio-contenedor .titulo-portafolio {
   font-size: 3rem;
 }
 
-.titulo-seccion-port {
+section .bodas-contenedor .titulo-seccion-port {
   font-size: 2rem;
   margin: 3rem auto 3rem 0;
 }
 
-.slider-port {
+section .slider-port {
   margin-top: 10rem;
 }
 
-/* IMAGEN DE BODA - PORTAFOLIO  */
+/* IMAGEN DE BODA y SESION- */
 .contenedor figure {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
-
 .contenedor figure img {
   transition: all 400ms ease;
 }
-
 .contenedor figure .capa {
   position: absolute;
   top: 0;
@@ -267,23 +264,12 @@ main .contenedor-back-porta .titulo-portafolio {
   opacity: 0;
   visibility: hidden;
 }
-
 .contenedor figure:hover > .capa {
   opacity: 1;
   visibility: visible;
 }
-
 .contenedor figure:hover > img {
   transform: scale(1.3);
-}
-
-.contenedor figure .capa h3 {
-  color: #fff;
-  transition: all 400ms ease-in;
-}
-
-.contenedor figure .capa p {
-  color: rgb(225, 221, 221);
 }
 
 @media screen and (max-width: 992px) {
@@ -317,6 +303,24 @@ main .contenedor-back-porta .titulo-portafolio {
   background-position-x: center;
 }
 
+.titulo-blog h1 {
+  color: #dedada;
+  font-family: "Lato", sans-serif;
+}
+
+.text-center h2 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0 rgba(225, 236, 246, 0.667);
+  margin: 6rem 0 4rem;
+}
+
+.col-lg-3:hover {
+  transform: scale(1.1);
+}
+.col-lg-3 img {
+  transition: all 5s ease;
+}
+
 @media screen and (max-width: 992px) {
   .contenedor-back-blog {
     background-position: end;
@@ -326,34 +330,16 @@ main .contenedor-back-porta .titulo-portafolio {
     background-position-x: center;
   }
 }
-.titulo-blog h1 {
-  color: #dedada;
-}
-
-.text-center h2 {
-  font-size: 2.5rem;
-  text-shadow: 0.1rem 0.1rem 0 rgba(225, 236, 246, 0.667);
-  margin: 6rem 0 4rem;
-}
-
-.col-lg-3 img {
-  transition: all 5s ease;
-}
-
-.col-lg-3:hover {
-  transform: scale(1.1);
-}
-
 /* PAGINA INFORMACION  */
-h1.titulo-info {
+.titulo-info {
   margin-top: 10rem;
 }
 
-h2.itulo-cards-tips {
+.titulo-cards-tips {
   margin-top: 20rem;
 }
 
-main.main-index {
+.main-index {
   margin-top: 10rem;
 }
 
