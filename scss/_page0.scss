@@ -8,8 +8,7 @@
     h1 {
         font-family: $font2;
         font-size: 3rem;
-        text-align: center;
-        justify-content: center;
+        @include flex-jus-alg-cent;
         margin: 10rem auto 5rem auto;
     }
 }
@@ -77,8 +76,7 @@
 }
 
 .perfil-card {
-    display: flex;
-    align-items: center;
+    @include flex-jus-alg-cent;
 
     .img-perfil-card {
         display: flex;

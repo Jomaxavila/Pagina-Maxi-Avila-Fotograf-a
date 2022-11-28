@@ -3,13 +3,13 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'roboto', sans-serif;
+    font-family: $font2, sans-serif;
 }
 
 a {
     text-decoration: none;
     padding: 0.5rem;
-    color: black;
+    color: $negrotop;
 }
 
 ul {

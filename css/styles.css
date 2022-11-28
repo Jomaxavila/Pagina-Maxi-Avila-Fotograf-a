@@ -3,13 +3,13 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "roboto", sans-serif;
+  font-family: "Montserrat", sans-serif, sans-serif;
 }
 
 a {
   text-decoration: none;
   padding: 0.5rem;
-  color: black;
+  color: #040303;
 }
 
 ul {
@@ -41,7 +41,7 @@ img {
 
 /* HEADER */
 .navbar .navbar-brand {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .navbar .navbar-nav {
   gap: 1rem;
@@ -89,8 +89,9 @@ img {
 .titulo-index h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  text-align: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin: 10rem auto 5rem auto;
 }
 
@@ -144,6 +145,7 @@ img {
 
 .perfil-card {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .perfil-card .img-perfil-card {
@@ -183,29 +185,39 @@ img {
   }
 }
 /* PAGE 1 - HOLA SOY MAXI  */
-.titulo-maxi h1 {
+.contenedor-back-sobremi {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/Maxi.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+.contenedor-back-sobremi .titulo-maxi {
   font-family: "Montserrat", sans-serif;
   animation: movimiento 3s infinite;
   transform: translate(0);
+}
+.contenedor-back-sobremi .maxi-historia {
+  font-size: 1rem;
 }
 @keyframes movimiento {
   from {
     transform: translateY(0);
   }
   to {
-    transform: translateY(7rem);
+    transform: translateY(10rem);
   }
 }
 
-.contenedor-back-sobremi {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Maxi.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position-x: center;
+@media screen and (max-width: 667px) {
+  .contenedor-back-sobremi .titulo-maxi {
+    font-size: 1.2rem;
+  }
+  .contenedor-back-sobremi .maxi-historia {
+    font-size: 0.8rem;
+  }
 }
-
 /**** PORTAFOLIO****/
 main .contenedor-back-porta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/LauyAgus/LauyAgusBoda4.jpg);
