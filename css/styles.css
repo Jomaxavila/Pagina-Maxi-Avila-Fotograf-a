@@ -88,7 +88,7 @@ img {
 /* MAIN */
 .titulo-index h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,7 @@ img {
   border-radius: 0.5rem;
   padding: 0rem 0.7rem;
   margin: 0.7rem 0.7rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   text-justify: auto;
   box-shadow: 0 0 0.6rem rgba(239, 241, 243, 0.667);
 }
@@ -164,29 +164,38 @@ img {
   color: #b3b2b2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 998px) {
   .titulo-index h1 {
     font-size: 1.5rem;
   }
-}
-@media screen and (max-width: 769px) {
-  .titulo-index h1 {
-    font-size: 1rem;
+  .titulo-index .titulo-cards h2 {
+    font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 769px) and (max-width: 769px) {
+@media screen and (max-width: 998px) and (max-width: 767px) {
+  .titulo-index h1 {
+    font-size: 1.2rem;
+  }
   .titulo-cards h2 {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 769px) and (max-width: 935px) {
+@media screen and (max-width: 998px) and (max-width: 375px) {
+  .titulo-index h1 {
+    font-size: 0.8rem;
+  }
+  .titulo-cards h2 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 998px) and (max-width: 935px) {
   .card-wrap {
     justify-content: center;
   }
 }
 /* PAGE 1 - HOLA SOY MAXI  */
 .contenedor-back-sobremi {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/Maxi.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../img/Sobre-mi/Maxi.jpg);
   background-position: end;
   background-repeat: no-repeat;
   background-size: cover;
@@ -197,6 +206,7 @@ img {
   font-family: "Montserrat", sans-serif;
   animation: movimiento 3s infinite;
   transform: translate(0);
+  font-size: 2.2rem;
 }
 .contenedor-back-sobremi .maxi-historia {
   font-size: 1rem;
@@ -210,12 +220,27 @@ img {
   }
 }
 
-@media screen and (max-width: 667px) {
+.contenedor-familia {
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+  .contenedor-back-sobremi .titulo-maxi {
+    font-size: 1.5rem;
+  }
+  .contenedor-back-sobremi .maxi-historia {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 375px) {
   .contenedor-back-sobremi .titulo-maxi {
     font-size: 1.2rem;
   }
   .contenedor-back-sobremi .maxi-historia {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+  }
+  section .maxi-amor h2 {
+    font-size: 1.5rem;
   }
 }
 /**** PORTAFOLIO****/
@@ -245,7 +270,7 @@ main .contenedor-back-porta .content-area .btn:hover {
   background: rgba(255, 255, 255, 0.0745098039);
 }
 main .portafolio-contenedor .titulo-portafolio {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 section .bodas-contenedor .titulo-seccion-port {
@@ -293,16 +318,15 @@ section .slider-port {
     background-position-x: center;
   }
 }
-@media screen and (max-width: 769px) {
-  .titulo-port {
-    font-size: 1.5rem;
+@media screen and (max-width: 375px) {
+  main .contenedor-back-porta .content-area .titulo-port {
+    font-size: 1.2rem;
   }
-  .titulo-portafolio {
-    font-size: 1.5rem;
+  main .portafolio-contenedor .content-porta .titulo-portafolio {
+    font-size: 1.2rem;
   }
-  h3.titulo-seccion-port {
-    font-size: 1.5rem;
-    text-align: center;
+  section .bodas-contenedor .titulo-seccion-port {
+    font-size: 1.2rem;
   }
 }
 /* BLOG  */

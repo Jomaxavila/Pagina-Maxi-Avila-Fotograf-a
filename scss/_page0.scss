@@ -7,7 +7,7 @@
 .titulo-index {
     h1 {
         font-family: $font2;
-        font-size: 3rem;
+        font-size: $titprincipal;
         @include flex-jus-alg-cent;
         margin: 10rem auto 5rem auto;
     }
@@ -18,7 +18,7 @@
 
 .titulo-cards {
     h2 {
-        font-size: 2rem;
+        font-size: $titsecundario;
         text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
         padding-top: 10rem;
         text-align: center;
@@ -39,7 +39,7 @@
         border-radius: 0.5rem;
         padding: 0rem .7rem;
         margin: .7rem .7rem;
-        font-size: .8rem;
+        font-size: $titulo-sec-media;
         text-justify: auto;
         box-shadow: 0 0 .6rem rgba(239, 241, 243, 0.667);
     }
@@ -107,32 +107,48 @@
 // TITULO PRINCIPAL 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:998px) {
     .titulo-index {
         h1 {
-            font-size: 1.5rem;
+            font-size: $titulo-pri-media;
         }
-    }
-}
-
-@media screen and (max-width:769px) {
-    .titulo-index {
-        h1 {
-            font-size: 1rem;
-        }
-    }
-
-    // TITULO CARDS 
-
-    @media screen and (max-width:769px) {
 
         .titulo-cards {
             h2 {
-                font-size: 1.2rem;
+                font-size: $titulo-pri-media;
             }
         }
     }
 
+    @media screen and (max-width:767px) {
+        .titulo-index {
+            h1 {
+                font-size: $titulo-sec-media;
+            }
+        }
+
+        .titulo-cards {
+            h2 {
+                font-size: $titulo-sec-media ;
+            }
+
+        }
+    }
+
+    @media screen and (max-width:375px) {
+        .titulo-index {
+            h1 {
+                font-size: $titulo-pri-mobile;
+            }
+        }
+
+        .titulo-cards {
+            h2 {
+                font-size: $titulo-sec-mobile ;
+            }
+
+        }
+    }
 
 
     //  CARDS 

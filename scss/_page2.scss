@@ -36,7 +36,7 @@ main {
         }
 
         .titulo-portafolio {
-            font-size: 3rem;
+            font-size: $titprincipal;
         }
 
     }
@@ -47,7 +47,7 @@ main {
 section {
     .bodas-contenedor {
         .titulo-seccion-port {
-            font-size: 2rem;
+            font-size: $titsecundario;
             margin: 3rem auto 3rem 0;
         }
 
@@ -105,18 +105,31 @@ section {
 }
 
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 375px) {
+    main {
+        .contenedor-back-porta {
+            .content-area {
+                .titulo-port {
+                    font-size: $titulo-sec-media;
+                }
+            }
+        }
 
-    .titulo-port {
-        font-size: $titercero
+        .portafolio-contenedor {
+            .content-porta {
+                .titulo-portafolio {
+                    font-size: $titulo-sec-media;
+                }
+            }
+        }
+
     }
 
-    .titulo-portafolio {
-        font-size: $titercero;
-    }
-
-    h3.titulo-seccion-port {
-        font-size: $titercero;
-        text-align: center;
+    section {
+        .bodas-contenedor {
+            .titulo-seccion-port {
+                font-size: $titulo-sec-media;
+            }
+        }
     }
 }
