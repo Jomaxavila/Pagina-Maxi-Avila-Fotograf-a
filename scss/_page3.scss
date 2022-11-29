@@ -22,27 +22,74 @@
         font-size: $titsecundario;
         text-shadow: .1rem .1rem 0 rgba(225, 236, 246, 0.667);
         margin: 6rem 0 4rem;
-
     }
 }
 
-// HOVER A IMAGENES 
+// IMAGENES 
 
-.col-lg-3 {
-    &:hover {
-        transform: scale(1.1);
-    }
+.container-fluid {
+    .cont-fotos-viaje {
+        .col-lg-3 {
+            figure {
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
 
-    img {
-        transition: all 5s ease;
+                img {
+                    transition: all 400ms ease;
+                }
+
+                .capa {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(200, 224, 235, 0.7);
+                    transition: all 300ms ease;
+                    opacity: 0;
+                    visibility: hidden;
+                    display: flex;
+
+                    p {
+                        margin: auto;
+                        color: $blancoclaro;
+                    }
+                }
+
+                &:hover> {
+                    .capa {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    img {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
     }
 }
 
 
 // MEDIA QUERIES 
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:375px) {
     .contenedor-back-blog {
         @include back-portada;
+    }
+
+    .container-fluid {
+        .text-center {
+            h2 {
+                font-size: $titulo-pri-mobile;
+            }
+        }
+    }
+
+    article {
+        .text-center {
+            font-size: $titulo-pri-mobile;
+        }
     }
 }
