@@ -248,6 +248,9 @@ img {
   section .maxi-amor h2 {
     font-size: 1.5rem;
   }
+  section .contenedor-familia .titulo-familia {
+    font-size: 1.2rem;
+  }
 }
 /**** PORTAFOLIO****/
 main .contenedor-back-porta {
