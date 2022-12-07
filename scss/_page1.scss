@@ -15,10 +15,10 @@
 
     .maxi-historia {
         font-size: $titulo-sec-media;
-        font-weight: 400;
-        text-shadow: .1rem .1rem 0 $negrotop;
+        font-weight: bold;
+        background: $grisboton;
         text-align: justify;
-        letter-spacing: .3rem;
+        letter-spacing: .2rem;
     }
 
     // ANIMACION TITULO 

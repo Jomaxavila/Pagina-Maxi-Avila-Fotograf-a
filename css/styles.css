@@ -233,10 +233,10 @@ img {
 }
 .contenedor-back-sobremi .maxi-historia {
   font-size: 1.2rem;
-  font-weight: 400;
-  text-shadow: 0.1rem 0.1rem 0 #040303;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.0745098039);
   text-align: justify;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
 }
 @keyframes movimiento {
   from {
@@ -291,7 +291,7 @@ main .contenedor-back-porta .content-area {
 }
 main .contenedor-back-porta .content-area .titulo-port {
   margin-top: 13rem;
-  text-shadow: 0.1rem 0.1rem 0 #040303;
+  font-weight: bold;
   text-align: center;
   letter-spacing: 0.3rem;
 }
