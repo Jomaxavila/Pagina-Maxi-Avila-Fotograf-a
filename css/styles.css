@@ -237,6 +237,7 @@ img {
   background: rgba(255, 255, 255, 0.0745098039);
   text-align: justify;
   letter-spacing: 0.2rem;
+  color: #040303;
 }
 @keyframes movimiento {
   from {
