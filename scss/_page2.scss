@@ -15,6 +15,10 @@ main {
 
             .titulo-port {
                 margin-top: 13rem;
+                text-shadow: .1rem .1rem 0 $negrotop;
+                text-align: center;
+                letter-spacing: .3rem;
+
             }
 
             .btn {
@@ -55,12 +59,6 @@ section {
 
 }
 
-section {
-    .slider-port {
-        margin-top: 10rem;
-    }
-}
-
 /* IMAGEN DE BODA y SESION- */
 
 .contenedor figure {
@@ -95,6 +93,26 @@ section {
     }
 }
 
+// CARROUSEL BOOTSTRAP
+section {
+    .slider-port {
+        margin-top: 10rem;
+    }
+}
+
+// BODA DE PAULA Y JOSE 
+.boda-paula {
+    .separador {
+        @extend .linediv;
+    }
+}
+
+// SESION DE MACA Y DANI
+.sesion-maca {
+    .separador {
+        @extend .linediv;
+    }
+}
 
 // ----MEDIA QUERIES PORTAFOLIO ----
 

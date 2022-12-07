@@ -33,7 +33,7 @@ img {
   color: #fafafa;
 }
 
-.linediv, main .portafolio-contenedor .separador {
+.linediv, .sesion-maca .separador, .boda-paula .separador, main .portafolio-contenedor .separador {
   border: solid 0.1px;
   color: #040303;
   margin: 10rem 0 10rem;
@@ -77,12 +77,22 @@ img {
   transition: all ease 3ms;
 }
 
+.flex-fill .navbar-nav {
+  gap: 2rem;
+}
+.flex-fill .navbar-nav .nav-item .fa-brands {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 992px) {
   .flex-fill {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .flex-fill .navbar-nav {
+    flex-direction: row;
   }
 }
 /* MAIN */
@@ -134,7 +144,7 @@ img {
 .cards-contenedor .card-wrap .card .footer-card .categoria-card {
   margin-bottom: 1.5rem;
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 .cards-contenedor .card-wrap .card .footer-card .categoria-card a {
   padding: 0.6rem 2.3rem;
@@ -169,8 +179,15 @@ img {
   .titulo-index h1 {
     font-size: 1.5rem;
   }
-  .titulo-index .titulo-cards h2 {
+  .cards-contenedor .titulo-cards h2 {
     font-size: 1.5rem;
+  }
+  .cards-contenedor .card-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    row-gap: 3rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -215,7 +232,11 @@ img {
   font-size: 2.2rem;
 }
 .contenedor-back-sobremi .maxi-historia {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0 #040303;
+  text-align: justify;
+  letter-spacing: 0.3rem;
 }
 @keyframes movimiento {
   from {
@@ -270,6 +291,9 @@ main .contenedor-back-porta .content-area {
 }
 main .contenedor-back-porta .content-area .titulo-port {
   margin-top: 13rem;
+  text-shadow: 0.1rem 0.1rem 0 #040303;
+  text-align: center;
+  letter-spacing: 0.3rem;
 }
 main .contenedor-back-porta .content-area .btn {
   padding: 1rem;
@@ -285,10 +309,6 @@ main .portafolio-contenedor .titulo-portafolio {
 section .bodas-contenedor .titulo-seccion-port {
   font-size: 2rem;
   margin: 3rem auto 3rem 0;
-}
-
-section .slider-port {
-  margin-top: 10rem;
 }
 
 /* IMAGEN DE BODA y SESION- */
@@ -316,6 +336,10 @@ section .slider-port {
 }
 .contenedor figure:hover > img {
   transform: scale(1.3);
+}
+
+section .slider-port {
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 992px) {

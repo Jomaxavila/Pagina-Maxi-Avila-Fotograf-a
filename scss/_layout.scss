@@ -58,14 +58,32 @@
     }
 }
 
+// FOOTER
+
+.flex-fill {
+    .navbar-nav {
+        gap: 2rem;
+
+        .nav-item {
+            .fa-brands {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
 
 // * MEDIA QUERIES GLOBAL  FOOTER */
+
 @media screen and (max-width: 992px) {
     .flex-fill {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
 
+        .navbar-nav {
+            flex-direction: row;
+        }
+    }
 }
